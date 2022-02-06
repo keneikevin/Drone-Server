@@ -15,11 +15,17 @@ Register Drone
 (POST) http://localhost:8080/addDrone
 
 serialNumber:String,
+
 model:Primitive, can be (Lightweight, Middleweight, Cruiserweight,
+
 Heavyweight);
+
 medications:String,
+
 battery:String,
+
 weightLimit:String,
+
 state:Primitive; can be(IDLE, LOADING, LOADED, DELIVERING, DELIVERED,
 RETURNING).
 
@@ -27,9 +33,14 @@ RETURNING).
 
 add medication to database
 takes in json objects
+
+
 name:String,
+
 weight:Float,
+
 code:String,
+
 image:String,
 
 
@@ -39,8 +50,14 @@ view all drones
 returns a list of drones above 25% battery
 
 (POST) http://localhost:8080/addMedication/dronesaddMedicToDrone
+
+
 add medication to a drone
+
 takes in json objects
+
 serialNo:String
+
 medicationName:Sting
+
 
